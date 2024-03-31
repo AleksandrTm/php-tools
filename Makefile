@@ -14,3 +14,6 @@ psalm-init:
 	@docker run --rm -v .:/tools/app -u 1000 ghcr.io/aleksandrtm/php-tools psalm-init
 psalm:
 	@docker run --rm -v .:/tools/app -u 1000 ghcr.io/aleksandrtm/php-tools psalm
+
+build:
+	@docker build --no-cache -t php-tools:latest .
