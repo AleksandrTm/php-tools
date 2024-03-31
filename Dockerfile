@@ -3,10 +3,10 @@ FROM php:8.3.4-cli-alpine
 ENV LANG=C.UTF-8
 ENV TERM=xterm-256color
 
-COPY opcache-dev.ini /usr/local/etc/php/conf.d/opcache.ini
+COPY opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 
-RUN mv "$PHP_INI_DIR/php.ini-development" "$PHP_INI_DIR/php.ini" && \
-    apk update && apk upgrade -a && apk add --no-cache bash curl zip unzip make && \
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" && \
+    apk update && apk upgrade -a && apk add --no-cache bash curl && \
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && \
     docker-php-source delete && apk del curl && \
     rm -rf /var/cache/apk/* && \
