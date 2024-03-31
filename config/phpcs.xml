@@ -10,6 +10,9 @@
     <arg name="ignore" value="vendor"/>
     <config name="ignore_warnings_on_exit" value="1"/>
 
+    <!-- Пример то как указать версию для которого будет работать phpcs 50403 -> 5.4.4-->
+    <!-- <config name="php_version" value="50403"/>-->
+
     <rule ref="PSR12">
     </rule>
 </ruleset>
