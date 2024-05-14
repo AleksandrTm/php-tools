@@ -8,10 +8,6 @@ function rector_fix() {
   cd /tools/app && ~/.composer/vendor/bin/rector
 }
 
-function rector_init() {
-  cd /tools/app && ~/.composer/vendor/bin/rector init
-}
-
 function phpcs() {
   cd /tools/app && ~/.composer/vendor/bin/phpcs .
 }
@@ -34,9 +30,6 @@ case "$1" in
     ;;
   rector-fix)
     rector_fix
-    ;;
-  rector-init)
-    rector_init
     ;;
   phpcs)
     phpcs
