@@ -4,9 +4,9 @@
 
 Набор инструментов для анализа PHP кода
 
-- Rector
-- Psalm
-- CodeSniffer
+- PHP_CodeSniffer version 3.9.2 (stable)
+- Rector 1.0.5
+- Psalm 5.24.0
 
 ---
 
