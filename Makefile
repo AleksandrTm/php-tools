@@ -3,8 +3,6 @@ phpcs:
 phpcbf:
 	@docker run --rm -v .:/tools/app -u 1000 ghcr.io/aleksandrtm/php-tools phpcbf
 
-rector-init:
-	@docker run --rm -v .:/tools/app -u 1000 ghcr.io/aleksandrtm/php-tools rector-init
 rector:
 	@docker run --rm -v .:/tools/app -u 1000 ghcr.io/aleksandrtm/php-tools rector
 rector-fix:
