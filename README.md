@@ -1,4 +1,7 @@
-### php-tools
+# PHP-TOOLS
+
+![Static Badge](https://img.shields.io/badge/PHP_TOOLS-1.4%20(latest)-brightgreen?style=for-the-badge)
+
 Набор инструментов для анализа PHP кода
 
 - Rector
@@ -17,8 +20,8 @@ docker pull ghcr.io/aleksandrtm/php-tools
 
 ---
 
-Сборка запускается под php 8.3.4-cli + JIT  
+Сборка запускается под php 8.3.6-cli-alpine + JIT  
 использовать можно под проекты с любыми версиями php
 
-**phpcs**: `<config name="php_version" value="50403"/>` // 50403 -> 5.4.4 | 70404 -> 7.4.4    
+**phpcs**: `<config name="php_version" value="50403"/>` // 50403 -> 5.4.3 | 70404 -> 7.4.4    
 **rector**: требуется указать `withPhpSets()` использует версию php из composer.json
