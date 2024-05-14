@@ -1,4 +1,4 @@
-FROM php:8.3.4-cli-alpine
+FROM php:8.3.6-cli-alpine
 
 ENV LANG=C.UTF-8
 ENV TERM=xterm-256color
