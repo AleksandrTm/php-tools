@@ -1,6 +1,6 @@
 # PHP-TOOLS
 
-[![Static Badge](https://img.shields.io/badge/PHP_TOOLS-1.4%20(latest)-brightgreen?style=for-the-badge)](https://github.com/aleksandrtm/php-tools/pkgs/container/php-tools)
+[![Static Badge](https://img.shields.io/badge/PHP_TOOLS-1.5%20(latest)-brightgreen?style=for-the-badge)](https://github.com/aleksandrtm/php-tools/pkgs/container/php-tools)
 
 Набор инструментов для анализа PHP кода
 
