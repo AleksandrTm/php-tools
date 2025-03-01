@@ -1,4 +1,4 @@
-FROM php:8.3.7-cli-alpine
+FROM php:8.4.2-cli-alpine
 
 ENV LANG=C.UTF-8
 ENV TERM=xterm-256color
@@ -20,7 +20,7 @@ COPY --chown=php-tools php-tools.sh /tools/
 RUN chmod +x /tools/php-tools.sh
 
 RUN composer global require rector/rector --dev && \
-    composer global require squizlabs/php_codesniffer --dev && \
+    composer global require squizlabs/php_codesniffer=^3.11.3 --dev && \
     composer global require vimeo/psalm --dev
 
 ENTRYPOINT ["/tools/php-tools.sh"]

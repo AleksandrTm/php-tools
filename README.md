@@ -4,7 +4,7 @@
 
 Набор инструментов для анализа PHP кода
 
-- PHP_CodeSniffer version 3.9.2 (stable)
+- PHP_CodeSniffer version 3.11.3
 - Rector 1.0.5
 - Psalm 5.24.0
 
@@ -20,7 +20,7 @@ docker pull ghcr.io/aleksandrtm/php-tools
 
 ---
 
-Сборка запускается под php 8.3.6-cli-alpine + JIT  
+Сборка запускается под php 8.4.2-cli-alpine + JIT  
 использовать можно под проекты с любыми версиями php
 
 **phpcs**: `<config name="php_version" value="50403"/>` // 50403 -> 5.4.3 | 70404 -> 7.4.4    
